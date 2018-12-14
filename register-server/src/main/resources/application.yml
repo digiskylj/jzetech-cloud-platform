@@ -1,0 +1,13 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: register-server
+
+eureka:
+  instance:
+    non-secure-port: ${server.port:9000}
+  client:
+    register-with-eureka: false
+    fetch-registry: false
